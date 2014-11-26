@@ -1,0 +1,128 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #f5ee0c;
+
+}
+
+#header {
+	background-color: #FFFFFF;
+}
+
+#yellow h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 90px;
+	color: #f5ed0b;
+	margin-bottom: 0px;
+	margin-top: 90px;
+}
+
+#consult h1 {
+	font-weight: 600;
+	background-color: #f5ed0b;
+	color: #FFFFFF;
+	width: 320px;
+	margin: 0 auto;
+}
+
+#short-desc h2 {
+	font-weight: 700;
+	font-size: 37px;
+	color: #545445;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#desc {
+	color: #545445;
+}
+
+#mail {
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+
+#footer {
+	padding-top: 25px;
+}
+
+#sosmed {
+	margin-bottom: 30px;
+}
+
+#sosmed a:first-child {
+	margin-right: 20px;
+}
+
+#sosmed a:last-child {
+	margin-left: 20px;
+}
+
+#address {
+	font-weight: 700;
+}
+
+#phone a {
+	font-weight: 700;
+	color: #4cd1d0;
+}
+
+#phone a:first-child {
+	margin-right: 20px;
+}
+
+#phone a:last-child {
+	margin-left: 20px;
+}
+
+#copyright {
+	font-weight: 700;
+	font-size: 11px;
+}
+
+.btn-turquoise {
+  color: #fff;
+  background-color: #4cd1d0;
+  border-color: #47c2c1;
+}
+.btn-turquoise:hover,
+.btn-turquoise:focus,
+.btn-turquoise.focus,
+.btn-turquoise:active,
+.btn-turquoise.active,
+.open > .dropdown-toggle.btn-turquoise {
+  color: #fff;
+  background-color: #2dcdcc;
+  border-color: #204d74;
+}
+.btn-turquoise:active,
+.btn-turquoise.active,
+.open > .dropdown-toggle.btn-turquoise {
+  background-image: none;
+}
+.btn-turquoise.disabled,
+.btn-turquoise[disabled],
+fieldset[disabled] .btn-turquoise,
+.btn-turquoise.disabled:hover,
+.btn-turquoise[disabled]:hover,
+fieldset[disabled] .btn-turquoise:hover,
+.btn-turquoise.disabled:focus,
+.btn-turquoise[disabled]:focus,
+fieldset[disabled] .btn-turquoise:focus,
+.btn-turquoise.disabled.focus,
+.btn-turquoise[disabled].focus,
+fieldset[disabled] .btn-turquoise.focus,
+.btn-turquoise.disabled:active,
+.btn-turquoise[disabled]:active,
+fieldset[disabled] .btn-turquoise:active,
+.btn-turquoise.disabled.active,
+.btn-turquoise[disabled].active,
+fieldset[disabled] .btn-turquoise.active {
+  background-color: #4cd1d0;
+  border-color: #47c2c1;
+}
+.btn-turquoise .badge {
+  color: #4cd1d0;
+  background-color: #fff;
+}
