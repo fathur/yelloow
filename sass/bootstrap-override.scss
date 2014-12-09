@@ -1,0 +1,35 @@
+
+.navbar {
+  border: none;
+}
+
+.navbar-brand {
+  padding: 30px 15px 0px 15px;
+}
+
+
+.has-yellow.form-group {
+  margin-bottom: 0px;
+}
+
+/* Search Form Header */
+.has-yellow .form-control {
+  border-color: $yellow;
+  background-color: $yellow;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+}
+.has-yellow .form-control:focus {
+  border-color: $yellow;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 0px $yellow;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 0px $yellow;
+}
+.has-yellow .input-group-addon {
+  color: $yellow;
+  background-color: $yellow;
+  border-color: $yellow;
+}
+.has-yellow .form-control-feedback {
+  color: #FFFFFF;
+}
