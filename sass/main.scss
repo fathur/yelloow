@@ -72,3 +72,59 @@
     }
   }
 }
+
+.carousel-yelloow {
+  & > .carousel-inner {
+    & > .item {
+      height: 500px;
+
+      img {
+        position: absolute;
+        bottom: -65px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  & > .text {
+
+    color: #545445;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    h2 {
+
+      font-weight: bold;
+      line-height: .5;
+    }
+  }
+}
+
+.content {
+  padding: 100px 0;
+
+  .single-column {
+    margin-bottom: 50px;
+
+    h4 {
+      line-height: 1.4;
+    }
+  }
+
+  .double-column {
+    ul.voor-wie {
+      li {
+        color: $blue;
+        font-weight: bold;
+        font-size: 17px;
+        border-bottom: 1px solid $yellow;
+        padding: 15px 0;
+      }
+    }
+  }
+}
