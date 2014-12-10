@@ -1,15 +1,20 @@
 @import "variable.scss";
 @import "bootstrap-override.scss";
 
-
+// Setting blok container fluid, jumbotron, dll
+// agar berwarna kuning
 .yellow {
 	background-color: $yellow;
 }
 
+// Setting blok container fluid, jumbotron, dll
+// agar berwarna putih
 .white {
   background-color: #FFFFFF;
 }
 
+// Main header untuk menu utama
+// ----------------------------
 .row.header {
 	padding: 30px 0px 0px 0px;
 	
@@ -84,6 +89,10 @@
   }
 }
 
+// ---------------------
+// Halaman home pertama
+// ---------------------
+
 .carousel-yelloow {
   & > .carousel-inner {
     & > .item {
@@ -140,19 +149,54 @@
   }
 }
 
+// Untuk konten yang mempunyai blok putih
+// Semua halaman memilikinya
 .content {
   padding: 100px 0;
 
-  .single-column {
+  // Konten yang memiliki satu kolom saja
+  .row.single-column {
     margin-bottom: 50px;
+
+    // Untuk title yang bergaris bawah
+    // dipasangkan dengan columns
+    & > .title {
+      img {
+
+      }
+
+      h2 {
+        text-align: center;
+        color: $black;
+        border-bottom: 7px solid $yellow;
+        display: table;
+        margin: 0 auto;
+        padding: 5px 0;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+    }
 
     h4 {
       line-height: 1.4;
     }
   }
 
-  .double-column {
-    ul.voor-wie {
+  // Konten yang memiliki dua kolom saja
+  .double-columns {
+
+    .col-sm-6 {
+      &:nth-child(odd) {
+        padding-right: 30px;
+      }
+
+      &:nth-child(even) {
+        padding-left: 30px;
+      }
+    }
+
+     
+    /* ul.voor-wie {
 
       li:not(:last-child) {
         border-bottom: 1px solid $yellow;
@@ -168,32 +212,122 @@
         text-transform: uppercase;
         padding: 15px 0 15px 40px;
       }
-    }
+    } */
   }
 
+  .triple-columns {
 
+  }
 
-  .black-box {
+  /* .black-box {
     &.logo {
       margin-top: 100px;
-
-      h2 {
-        font-weight: bold;
-        color: $black;
-        border-bottom: 5px solid $yellow;
-        width: 150px;
-        margin: 0 auto;
-        padding: 20px 0 10px 0;
-
-      }
     }
 
     &.text {
       margin-top: 60px;
     }
+  } */
+}
+
+
+
+.voorwie-submenu {
+  .row {
+    padding: 40px 0;
+    color: $black;
+
+    h4 {
+      font-weight: bold;
+      text-align: center;
+    }
   }
 }
 
+.leidinggevenden,
+.team,
+.professional,
+.graves,
+.drijfveren {
+
+  .btn {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}
+
+.troubleshoot {
+  h2 {
+    font-weight: bold;
+    border-bottom: 7px solid #FFFFFF;
+    display: table;
+    margin: 0 auto 50px auto;
+    padding: 0 0 8px 0;
+  }
+}
+
+.graves {
+  img {
+    margin-top: 70px;
+    margin-bottom: 100px;
+
+  }
+}
+
+.drijfveren {
+  & > .col-sm-12 {
+
+    @media (min-width: 768px) {
+
+      & > .row:not(:first-child) {
+        margin-bottom: 100px;
+      }
+    }
+
+    .row {
+      
+      
+
+      .text-center {
+
+
+        h4 {
+          font-weight: bold;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    .two-columns {
+     
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .row > .text-center {
+      padding-bottom: 40px;
+    } 
+  }
+}
+
+.man {
+
+  padding: 0px;
+  
+  img {
+    width: 100%;
+  }
+
+  .text {
+    padding: 40px 0;
+  }
+}
+
+// Styling untuk footer
+// --------------------
 .footer {
   padding-top: 25px;
 
@@ -242,75 +376,5 @@
   .copyright {
     font-weight: 700;
     font-size: 11px;
-  }
-}
-
-.voorwie-submenu {
-  .row {
-    padding: 40px 0;
-    color: $black;
-
-    h4 {
-      font-weight: bold;
-      text-align: center;
-    }
-  }
-}
-
-.leidinggevenden,
-.team,
-.professional,
-.graves,
-.drijfveren {
-  h2 {
-    text-align: center;
-    color: $black;
-    border-bottom: 7px solid $yellow;
-    display: table;
-    margin: 0 auto;
-    padding: 5px 0;
-    font-weight: bold;
-    margin-bottom: 60px;
-  }
-
-  .btn {
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
-}
-
-.troubleshoot {
-  h2 {
-    font-weight: bold;
-    border-bottom: 7px solid #FFFFFF;
-    display: table;
-    margin: 0 auto 50px auto;
-    padding: 0 0 8px 0;
-  }
-}
-
-.graves {
-  img {
-    margin-top: 70px;
-    margin-bottom: 100px;
-
-  }
-}
-
-.drijfveren {
-  & > .col-sm-12 {
-
-    & > .row:not(:first-child) {
-      margin-bottom: 100px;
-    }
-
-    .row {
-      .text-center {
-        h4 {
-          font-weight: bold;
-          margin: 20px 0;
-        }
-      }
-    }
   }
 }
