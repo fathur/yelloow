@@ -3,10 +3,39 @@
   border: none;
 }
 
-.navbar-brand {
-  padding: 30px 15px 0px 15px;
+@media (min-width: 768px) {
+  .navbar-brand {
+    padding: 30px 15px 0px 15px;
+  }
 }
 
+/**
+ * Di Handphone
+ */
+@media screen and (max-width: 767px) {
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .navbar-brand {
+
+    padding: 5px 15px;
+
+    & > img {
+      height: 40px;
+    }
+  }
+}
+
+.navbar-default {
+  .navbar-toggle {
+    &:hover,
+    &:visited,
+    &:focus {
+      background-color: $yellow;
+    }
+  }
+}
 
 .has-yellow.form-group {
   margin-bottom: 0px;
@@ -32,4 +61,15 @@
 }
 .has-yellow .form-control-feedback {
   color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  
+  .col-sm-6:nth-child(odd) {
+    padding-right: 30px;
+  }
+
+  .col-sm-6:nth-child(even) {
+    padding-left: 30px;
+  }
 }
