@@ -73,3 +73,50 @@
     padding-left: 30px;
   }
 }
+
+/* Button Turqoise */
+.btn-turquoise {
+  color: #fff;
+  background-color: #4cd1d0;
+  border-color: #47c2c1;
+}
+.btn-turquoise:hover,
+.btn-turquoise:focus,
+.btn-turquoise.focus,
+.btn-turquoise:active,
+.btn-turquoise.active,
+.open > .dropdown-toggle.btn-turquoise {
+  color: #fff;
+  background-color: #2dcdcc;
+  border-color: #204d74;
+}
+.btn-turquoise:active,
+.btn-turquoise.active,
+.open > .dropdown-toggle.btn-turquoise {
+  background-image: none;
+}
+.btn-turquoise.disabled,
+.btn-turquoise[disabled],
+fieldset[disabled] .btn-turquoise,
+.btn-turquoise.disabled:hover,
+.btn-turquoise[disabled]:hover,
+fieldset[disabled] .btn-turquoise:hover,
+.btn-turquoise.disabled:focus,
+.btn-turquoise[disabled]:focus,
+fieldset[disabled] .btn-turquoise:focus,
+.btn-turquoise.disabled.focus,
+.btn-turquoise[disabled].focus,
+fieldset[disabled] .btn-turquoise.focus,
+.btn-turquoise.disabled:active,
+.btn-turquoise[disabled]:active,
+fieldset[disabled] .btn-turquoise:active,
+.btn-turquoise.disabled.active,
+.btn-turquoise[disabled].active,
+fieldset[disabled] .btn-turquoise.active {
+  background-color: #4cd1d0;
+  border-color: #47c2c1;
+}
+.btn-turquoise .badge {
+  color: #4cd1d0;
+  background-color: #fff;
+}
