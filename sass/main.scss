@@ -259,11 +259,13 @@
 
 .leidinggevenden,
 .team,
-.professional {
+.professional,
+.graves,
+.drijfveren {
   h2 {
     text-align: center;
     color: $black;
-    border-bottom: 5px solid $yellow;
+    border-bottom: 7px solid $yellow;
     display: table;
     margin: 0 auto;
     padding: 5px 0;
@@ -274,5 +276,41 @@
   .btn {
     margin-top: 40px;
     margin-bottom: 100px;
+  }
+}
+
+.troubleshoot {
+  h2 {
+    font-weight: bold;
+    border-bottom: 7px solid #FFFFFF;
+    display: table;
+    margin: 0 auto 50px auto;
+    padding: 0 0 8px 0;
+  }
+}
+
+.graves {
+  img {
+    margin-top: 70px;
+    margin-bottom: 100px;
+
+  }
+}
+
+.drijfveren {
+  & > .col-sm-12 {
+
+    & > .row:not(:first-child) {
+      margin-bottom: 100px;
+    }
+
+    .row {
+      .text-center {
+        h4 {
+          font-weight: bold;
+          margin: 20px 0;
+        }
+      }
+    }
   }
 }
