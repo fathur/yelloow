@@ -124,6 +124,8 @@
     .btn {
       margin-top: 40px;
     }
+
+    
   }
 
   // Konten yang memiliki dua kolom saja
@@ -137,6 +139,18 @@
       &:nth-child(even) {
         padding-left: 30px;
       }
+    }
+
+    // Untuk dua kolom yang menggunakan css3
+    .col-sm-12 {
+      min-height: inherit;
+      
+      -moz-column-count: 2;
+      -moz-column-gap: 60px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 60px;
+      column-count: 2;
+      column-gap: 60px;
     }
   }
 
