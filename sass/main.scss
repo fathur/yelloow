@@ -44,16 +44,13 @@
   }
 }
 
+/**
+ * Menu utama
+ */
 .navbar-yelloow {
 
   & > li:not(:last-child) {
-
-   /*  background-image: url("../img/dot.png");
-    background-repeat: no-repeat;
-    background-position: right center;
- */
     & > a {
-      // padding: 10px 20px 10px 10px;
       padding: 15px 0px 0px 0px;
       margin: 0 15px;
 
@@ -65,7 +62,6 @@
 
   & > li:last-child {
     & > a {
-      // padding: 10px 20px 10px 10px;
 
       &:hover {
         color: $yellow;
@@ -75,9 +71,7 @@
 
   & > .active:not(:last-child) {
     & > a {
-        /* background-image: url("../img/dot.png");
-        background-repeat: no-repeat;
-        background-position: right center; */
+        
         background-color: #FFFFFF !important; 
 
         color: $yellow;
@@ -110,7 +104,7 @@
     // dipasangkan dengan columns
     & > .title {
 
-      margin-bottom: 30px;
+      margin-bottom: 60px;
 
       img {
 
@@ -144,27 +138,46 @@
         padding-left: 30px;
       }
     }
-
-     
-    /* ul.voor-wie {
-
-     
-    } */
   }
 
   .triple-columns {
 
   }
+}
 
-  /* .black-box {
-    &.logo {
-      margin-top: 100px;
-    }
+.img-full-width {
 
-    &.text {
-      margin-top: 60px;
+  padding: 0px;
+
+   @media (min-width: 992px) {
+
+    & > .image {
+      height: 600px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+
+      }
     }
-  } */
+  }
+
+  @media (min-width: 1200px) {
+
+    & > .image {
+      height: 640px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+
+  .text {
+    padding: 40px 0;
+  }
 }
 
 /**
@@ -271,6 +284,26 @@ ul.list-right-arrow {
 
     padding: 40px 0;
 
+    @media (min-width: 768px) {
+      & > .col-sm-4:first-child {
+        padding-left: 90px;
+      }
+
+      & > .col-sm-4:last-child {
+        padding-right: 90px;
+      }
+    }
+
+    @media (min-width: 992px) {
+       & > .col-sm-4:first-child {
+        padding-left: 160px;
+      }
+
+      & > .col-sm-4:last-child {
+        padding-right: 160px;
+      }
+    }
+
     a {
       text-decoration: none;
 
@@ -283,18 +316,11 @@ ul.list-right-arrow {
   }
 }
 
-.leidinggevenden,
-.team,
-.professional,
-.graves,
-.drijfveren {
-
-  .btn {
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
-}
-
+/**
+ * =========================
+ * Halaman Approach
+ * =========================
+ */
 .troubleshoot {
   h2 {
     font-weight: bold;
@@ -308,40 +334,79 @@ ul.list-right-arrow {
 .graves {
   img {
     margin-top: 70px;
-    margin-bottom: 100px;
 
   }
 }
 
+/**
+ * Drijfveren
+ * Penempatan Warna warna
+ */
 .drijfveren {
-  & > .col-sm-12 {
 
-    @media (min-width: 768px) {
+  .double-columns,
+  .triple-columns {
+    h4 {
+      font-weight: bold;
+      margin: 20px 0;
+    }
+  }
 
-      & > .row:not(:first-child) {
-        margin-bottom: 100px;
-      }
+  @media (min-width: 768px) {
+    .double-columns,
+    .triple-columns {
+      margin-bottom: 100px;
     }
 
-    .row {
-      
-      
+    .double-columns {
+      & > .text-center {
+        &:first-child {
+          padding-left: 140px;
+          padding-right: 15px;
+        }
 
-      .text-center {
+         &:last-child {
+          padding-right: 140px;
+          padding-left: 15px;
 
-
-        h4 {
-          font-weight: bold;
-          margin: 20px 0;
         }
       }
     }
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 992px) {
 
-    .two-columns {
-     
+    .double-columns {
+      & > .text-center {
+        &:first-child {
+          padding-left: 170px;
+          padding-right: 15px;
+        }
+
+         &:last-child {
+          padding-right: 170px;
+          padding-left: 15px;
+
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    .double-columns {
+      & > .text-center {
+        &:first-child {
+          padding-left: 200px;
+          padding-right: 15px;
+        }
+
+         &:last-child {
+          padding-right: 200px;
+          padding-left: 15px;
+
+        }
+      }
     }
   }
 
@@ -352,44 +417,52 @@ ul.list-right-arrow {
   }
 }
 
-.img-full-width {
-
-  padding: 0px;
-
-   @media (min-width: 992px) {
-
-    & > .image {
-      height: 600px;
-      overflow: hidden;
-      
-      img {
-        width: 100%;
-
-      }
+/**
+ * ========================
+ * Halaman Over Yellow
+ * ========================
+ */
+.reference {
+  .triple-columns {
+    & > .col-sm-4 {
+      height: 125px;
+      margin-bottom: 50px;
     }
-  }
-
-  @media (min-width: 1200px) {
-
-    & > .image {
-      height: 640px;
-      overflow: hidden;
-      
-      img {
-        width: 100%;
-
-      }
-    }
-  }
-
-  .text {
-    padding: 40px 0;
   }
 }
 
-// --------------------
-// Styling untuk footer
-// --------------------
+/**
+ * ===================
+ * Halaman Contact
+ * ===================
+ */
+.contact-form {
+  .form {
+    .form-control {
+      background-color: $gray;
+      text-align: center;
+
+      &::input-placeholder,
+      &::-webkit-input-placeholder,
+      &::-moz-input-placeholder,
+      &::-ms-input-placeholder {
+        font-weight: bold;
+
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+  }
+}
+
+/**
+ * ======================
+ *  Styling untuk footer
+ * ======================
+ */
 .footer {
   padding-top: 25px;
 
