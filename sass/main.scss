@@ -261,14 +261,24 @@ ul.list-right-arrow {
   }
 }
 
+/**
+ * ===========================
+ * Halaman Voorwie
+ * ===========================
+ */
 .voorwie-submenu {
   .row {
-    padding: 40px 0;
-    color: $black;
 
-    h4 {
-      font-weight: bold;
-      text-align: center;
+    padding: 40px 0;
+
+    a {
+      text-decoration: none;
+
+      & > h4 {
+        color: $black;
+        font-weight: bold;
+        text-align: center;
+      }
     }
   }
 }
