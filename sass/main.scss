@@ -130,10 +130,6 @@
     .btn {
       margin-top: 40px;
     }
-
-    h4 {
-      line-height: 1.4;
-    }
   }
 
   // Konten yang memiliki dua kolom saja
@@ -152,20 +148,7 @@
      
     /* ul.voor-wie {
 
-      li:not(:last-child) {
-        border-bottom: 1px solid $yellow;
-      }
-
-      li {
-        color: $blue;
-        font-weight: bold;
-        font-size: 15px;
-        background-image: url('../img/right-arrow.png');
-        background-repeat: no-repeat;
-        background-position: left center;
-        text-transform: uppercase;
-        padding: 15px 0 15px 40px;
-      }
+     
     } */
   }
 
@@ -184,10 +167,11 @@
   } */
 }
 
-// ---------------------
-// Halaman home pertama
-// ---------------------
-
+/**
+ * ======================
+ * Halaman home pertama
+ * ======================
+ */
 .carousel-yelloow {
   & > .carousel-inner {
     & > .item {
@@ -233,9 +217,10 @@
   }
 }
 
-
-
-
+/**
+ * Dipakai pada halaman index 
+ * untuk menunjuk arrow ke bawah
+ */
 .content-fluid {
   position:relative;
   .btn-arrow {
@@ -244,6 +229,35 @@
     left: 0px;
     right: 0px;
     top: -30px;
+  }
+}
+
+.intro-sort {
+ h4 {
+    line-height: 1.4;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+/**
+ * Arrow bullet for
+ * list voor wie
+ */
+ul.list-right-arrow {
+  li:not(:last-child) {
+    border-bottom: 1px solid $yellow;
+  }
+
+  li {
+    color: $blue;
+    font-weight: bold;
+    font-size: 15px;
+    background-image: url('../img/right-arrow.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-transform: uppercase;
+    padding: 15px 0 15px 40px;
   }
 }
 
