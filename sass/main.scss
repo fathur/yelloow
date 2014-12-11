@@ -344,6 +344,15 @@ ul.list-right-arrow {
         font-weight: bold;
         text-align: center;
       }
+
+      @media screen and (max-width: 767px) {
+        & > h4 {
+          color: $black;
+          font-weight: bold;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
     }
   }
 }
