@@ -328,12 +328,34 @@
   }
 }
 
-.man {
+.img-full-width {
 
   padding: 0px;
-  
-  img {
-    width: 100%;
+
+   @media (min-width: 992px) {
+
+    & > .image {
+      height: 600px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+
+    & > .image {
+      height: 640px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+
+      }
+    }
   }
 
   .text {
@@ -341,6 +363,7 @@
   }
 }
 
+// --------------------
 // Styling untuk footer
 // --------------------
 .footer {
