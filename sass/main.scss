@@ -436,6 +436,44 @@ ul.list-right-arrow {
  * Halaman Contact
  * ===================
  */
+.gmaps {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}  
+
+@media screen and (max-width: 767px) {
+  .gmaps {
+    padding-bottom: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .gmaps {
+    padding-bottom: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .gmaps {
+    padding-bottom: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gmaps {
+    padding-bottom: 640px;
+  }
+}
+
 .contact-form {
   .form {
     .form-control {
