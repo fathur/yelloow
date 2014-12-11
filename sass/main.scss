@@ -149,10 +149,24 @@
 
   padding: 0px;
 
-   @media (min-width: 992px) {
+  @media (min-width: 768px) {
+    .gmaps {
+      & > .image {
+        height: 50%;
+        overflow: hidden;
+        
+        img {
+          width: 100%;
+
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
 
     & > .image {
-      height: 600px;
+      height: 500px;
       overflow: hidden;
       
       img {
@@ -165,7 +179,7 @@
   @media (min-width: 1200px) {
 
     & > .image {
-      height: 640px;
+      height: 545px;
       overflow: hidden;
       
       img {
@@ -458,19 +472,27 @@ ul.list-right-arrow {
 
 @media (min-width: 768px) {
   .gmaps {
-    padding-bottom: 75%;
+    padding-bottom: 50%;
   }
 }
 
 @media (min-width: 992px) {
   .gmaps {
-    padding-bottom: 600px;
+    padding-bottom: 500px;
   }
 }
 
 @media (min-width: 1200px) {
   .gmaps {
-    padding-bottom: 640px;
+    padding-bottom: 545px;
+  }
+}
+
+.address {
+  a {
+    display: block;
+    font-weight: 700;
+    color: $blue;
   }
 }
 
