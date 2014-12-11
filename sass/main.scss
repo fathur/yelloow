@@ -13,6 +13,7 @@
   background-color: #FFFFFF;
 }
 
+// ----------------------------
 // Main header untuk menu utama
 // ----------------------------
 .row.header {
@@ -89,78 +90,28 @@
   }
 }
 
-// ---------------------
-// Halaman home pertama
-// ---------------------
 
-.carousel-yelloow {
-  & > .carousel-inner {
-    & > .item {
-      height: 500px;
 
-      img {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-      }
-
-      @media (min-width: 768px) {
-        img {
-          bottom: -65px;
-        }
-      }
-
-      @media screen and (max-width: 767px) {
-        img {
-          bottom: -40px;
-        }
-      }
-    }
-  }
-
-  & > .text {
-
-    color: $black;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-    h2 {
-
-      font-weight: bold;
-      line-height: 1.1;
-      margin: 8px 0px;
-
-    }
-  }
-}
-
-.content-fluid {
-  position:relative;
-  .btn-arrow {
-    position: absolute;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
-    top: -30px;
-  }
-}
-
+// ---------------------------------------
 // Untuk konten yang mempunyai blok putih
 // Semua halaman memilikinya
+// ---------------------------------------
 .content {
-  padding: 100px 0;
+  padding: 40px 0 100px 0;
+
+  & > .row:not(:first-child) {
+    margin-top: 90px;
+  }
 
   // Konten yang memiliki satu kolom saja
   .row.single-column {
-    margin-bottom: 50px;
 
     // Untuk title yang bergaris bawah
     // dipasangkan dengan columns
     & > .title {
+
+      margin-bottom: 30px;
+
       img {
 
       }
@@ -173,8 +124,11 @@
         margin: 0 auto;
         padding: 5px 0;
         font-weight: bold;
-        margin-bottom: 60px;
       }
+    }
+
+    .btn {
+      margin-top: 40px;
     }
 
     h4 {
@@ -230,7 +184,68 @@
   } */
 }
 
+// ---------------------
+// Halaman home pertama
+// ---------------------
 
+.carousel-yelloow {
+  & > .carousel-inner {
+    & > .item {
+      height: 500px;
+
+      img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 768px) {
+        img {
+          bottom: -65px;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        img {
+          bottom: -40px;
+        }
+      }
+    }
+  }
+
+  & > .text {
+
+    color: $black;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    h2 {
+
+      font-weight: bold;
+      line-height: 1.1;
+      margin: 8px 0px;
+
+    }
+  }
+}
+
+
+
+
+.content-fluid {
+  position:relative;
+  .btn-arrow {
+    position: absolute;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    top: -30px;
+  }
+}
 
 .voorwie-submenu {
   .row {
