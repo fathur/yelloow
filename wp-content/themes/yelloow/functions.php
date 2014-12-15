@@ -1,6 +1,7 @@
 <?php
 
 add_theme_support( 'post-thumbnails' );
+add_filter('show_admin_bar', '__return_false');
 
 /**
  * Load style scripts and javascript scripts
@@ -33,5 +34,6 @@ function yelloow_fonts() {
 	wp_enqueue_style('open-sans-condensed');
 }
 add_action('wp_print_styles','yelloow_fonts');
+
 
 ?>

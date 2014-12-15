@@ -32,7 +32,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="index.html">
-		      	<img src="img/logo-yelloow.png" class="img-responsive">
+		      	<img src="<?php echo get_template_directory_uri(); ?>/img/logo-yelloow.png" class="img-responsive">
 		      </a>
 		    </div>
 
