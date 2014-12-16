@@ -303,6 +303,12 @@ ul.list-right-arrow {
     background-position: left center;
     text-transform: uppercase;
     padding: 15px 0 15px 40px;
+
+    & > a {
+      color: $blue;
+      display: block;
+      text-decoration: none;
+    }
   }
 }
 
