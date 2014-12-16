@@ -41,15 +41,6 @@
 
 				<div class="row header">
 					<div class="col-xs-12 col-sm-4 pull-right">
-						<!-- <form method="POST" action="/" role="form">
-							<div class="form-group has-yellow has-feedback">
-								
-								<input type="text" class="form-control input-sm" id="search">
-								<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-							</div>
-							
-						</form> -->
-
 						<?php get_search_form(); ?>
 					</div>
 
@@ -70,12 +61,13 @@
 
 				<div class="row menu">
 					<div class="col-sm-9 col-sm-offset-3">
-						<ul class="nav navbar-nav navbar-right navbar-yelloow">
+						<!-- <ul class="nav navbar-nav navbar-right navbar-yelloow">
 							<li class="active"><a href="voorwie.html">VOOR WIE</a></li>
 							<li><a href="approach.html">APPROACH</a></li>
 							<li><a href="over.html">OVER YELLOOW</a></li>
 							<li><a href="contact.html">CONTACT</a></li>
-						</ul>
+						</ul> -->
+						<?php yelloow_display_menu(); ?>
 					</div>
 				</div>
 			</div><!-- /.navbar-collapse -->

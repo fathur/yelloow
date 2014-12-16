@@ -36,10 +36,18 @@ function yelloow_fonts() {
 }
 add_action('wp_print_styles','yelloow_fonts');
 
+/**
+ * Redirect helper
+ * @param  string  $url        url for redirecting
+ * @param  integer $statusCode status code when redirecting
+ * @return void              
+ */
 function redirect($url, $statusCode = 303) {
 	header('Location: ' . $url, true, $statusCode);
 	die();
 }
 
 // require get_template_directory() . '/inc/admin-menu.php'; 
+require get_template_directory() . '/inc/navigation-menu.php'; 
+ 
 ?>
