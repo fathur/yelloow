@@ -1,6 +1,7 @@
 <?php
 
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'html5', array( 'search-form' ) );
 add_filter('show_admin_bar', '__return_false');
 
 /**

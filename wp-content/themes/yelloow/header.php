@@ -41,14 +41,16 @@
 
 				<div class="row header">
 					<div class="col-xs-12 col-sm-4 pull-right">
-						<form method="POST" action="/" role="form">
+						<!-- <form method="POST" action="/" role="form">
 							<div class="form-group has-yellow has-feedback">
 								
 								<input type="text" class="form-control input-sm" id="search">
 								<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
 							</div>
 							
-						</form>
+						</form> -->
+
+						<?php get_search_form(); ?>
 					</div>
 
 					<div class="col-xs-12 col-sm-3 pull-right top-sosmed">
