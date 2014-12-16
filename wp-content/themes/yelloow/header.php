@@ -52,15 +52,15 @@
 					</div>
 
 					<div class="col-xs-12 col-sm-3 pull-right top-sosmed">
-						<a href="#">
-							<img src="img/twitter-yellow.png" class="">
+						<a href="https://twitter.com/yelloow_consult" target="_blank">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/twitter-yelloow.png" class="">
 						</a>
 
-						<a href="#">
-							<img src="img/fb-yellow.png" class="">
+						<a href="https://www.facebook.com/yelloowconsult" target="_blank">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/fb-yelloow.png" class="">
 						</a>
-						<a href="#">
-							<img src="img/linkedin-yellow.png" class="">
+						<a href="https://www.linkedin.com/company/yelloow?trk=company_logo" target="_blank">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin-yelloow.png" class="">
 						</a>
 					</div>
 

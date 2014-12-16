@@ -83,6 +83,8 @@
 			 */
 			$dv = new WP_Query(array(
 				'post_type'			=> 'drijfveren',
+				'orderby'			=> 'menu_order',
+				'order'				=> 'ASC',
 				'posts_per_page'	=> 7
 			));
 
@@ -107,7 +109,6 @@
 				wp_reset_postdata();
 			endif;
 
-			var_dump($colors);
 			?>
 
 			<div class="col-sm-12">
@@ -123,9 +124,7 @@
 					<?php for ($i=0; $i < 2; $i++) : ?>
 					<div class="col-sm-6 text-center">
 						<?php echo $colors[$i]['image']; ?>
-
 						<h4><?php echo $colors[$i]['title']; ?></h4>
-
 						<?php echo $colors[$i]['content']; ?>
 					</div>
 					<?php endfor;	?>
@@ -133,50 +132,26 @@
 				</div>
 
 				<div class="row triple-columns">
+
+					<?php for ($j=2; $j < 5; $j++) : ?>
 					<div class="col-sm-4 text-center">
-						<img src="../img/brush-blue.png" class="img-responsive center-block">
-						<h4>PAARS</h4>
-
-						<p>staat voor ongeschreven regels, traditie, familieband, vertrouwdheid, rituelen, geloof, bescheidenheid</p>
-
-						<p>Negatief : achterdocht, wantrouwen</p>
+						<?php echo $colors[$j]['image']; ?>
+						<h4><?php echo $colors[$j]['title']; ?></h4>
+						<?php echo $colors[$j]['content']; ?>
 					</div>
-					<div class="col-sm-4 text-center">
-						<img src="../img/brush-orange.png" class="img-responsive center-block">
-						<h4>PAARS</h4>
-
-						<p>staat voor ongeschreven regels, traditie, familieband, vertrouwdheid, rituelen, geloof, bescheidenheid</p>
-
-						<p>Negatief : achterdocht, wantrouwen</p>
-					</div>
-					<div class="col-sm-4 text-center">
-						<img src="../img/brush-green.png" class="img-responsive center-block">
-						<h4>PAARS</h4>
-
-						<p>staat voor ongeschreven regels, traditie, familieband, vertrouwdheid, rituelen, geloof, bescheidenheid</p>
-
-						<p>Negatief : achterdocht, wantrouwen</p>
-					</div>
+					<?php endfor;	?>
+					
 					
 				</div>
 
 				<div class="row double-columns">
+					<?php for ($k=5; $k < 7; $k++) : ?>
 					<div class="col-sm-6 text-center">
-						<img src="../img/brush-yellow.png" class="img-responsive center-block">
-						<h4>PAARS</h4>
-
-						<p>staat voor ongeschreven regels, traditie, familieband, vertrouwdheid, rituelen, geloof, bescheidenheid</p>
-
-						<p>Negatief : achterdocht, wantrouwen</p>
+						<?php echo $colors[$k]['image']; ?>
+						<h4><?php echo $colors[$k]['title']; ?></h4>
+						<?php echo $colors[$k]['content']; ?>
 					</div>
-					<div class="col-sm-6 text-center">
-						<img src="../img/brush-turqoise.png" class="img-responsive center-block">
-						<h4>PAARS</h4>
-
-						<p>staat voor ongeschreven regels, traditie, familieband, vertrouwdheid, rituelen, geloof, bescheidenheid</p>
-
-						<p>Negatief : achterdocht, wantrouwen</p>
-					</div>
+					<?php endfor;	?>
 					
 				</div>
 			</div>

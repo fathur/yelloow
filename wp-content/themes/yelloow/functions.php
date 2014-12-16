@@ -35,5 +35,5 @@ function yelloow_fonts() {
 }
 add_action('wp_print_styles','yelloow_fonts');
 
-
+// require get_template_directory() . '/inc/admin-menu.php'; 
 ?>

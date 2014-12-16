@@ -2,14 +2,15 @@
 		<div class="container footer">
 			<div class="row">
 				<div class="col-sm-12 text-center sosmed" >
-					<a href="https://twitter.com/yelloow_consult">
-						<img src="img/uc/twitter.png">
+					<a href="https://twitter.com/yelloow_consult" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png" class="">
 					</a>
-					<a href="https://www.facebook.com/yelloowconsult">
-						<img src="img/uc/fb.png">
+
+					<a href="https://www.facebook.com/yelloowconsult" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/fb.png" class="">
 					</a>
-					<a href="https://www.linkedin.com/company/yelloow?trk=company_logo">
-						<img src="img/uc/linkedin.png">
+					<a href="https://www.linkedin.com/company/yelloow?trk=company_logo" target="_blank">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png" class="">
 					</a>
 				</div>
 			</div>

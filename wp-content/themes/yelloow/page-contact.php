@@ -3,7 +3,7 @@
 <div class="container-fluid yellow img-full-width">
 
 	<div class="gmaps">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d628.1242106891026!2d4.189139199999994!3d50.9700064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c395054a00d8fd%3A0x36c09e2c3612bdd!2sMarktstraat+40%2C+1745+Opwijk%2C+Belgium!5e0!3m2!1sen!2s!4v1418278454230" width="800" height="600" frameborder="0" style="border:0"></iframe>
+		<?php echo get_post_meta(get_the_ID(), 'yelloow-map', true); ?>
 	</div>
 
 	<div class="container">
@@ -35,14 +35,10 @@
 				/**
 				 * Display contact page
 				 */
-				$contact = new WP_Query(array(
-					'pagename'	=> 'contact'
-				));
+				if ( have_posts() ) :
 
-				if ($contact->have_posts()) :
-
-					while ( $contact->have_posts()) :
-						$contact->the_post();
+					while ( have_posts() ) :
+						the_post();
 				?>
 
 				<div class="row single-column text-center">

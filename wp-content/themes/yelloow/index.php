@@ -26,32 +26,66 @@
 	<div class="container content">
 		<div class="row intro">
 			<div class="col-sm-12">
+
+				<?php 
+				$intro = new WP_Query(array(
+					'post_type'		=> 'content-introduction'
+				));
+
+				if ($intro->have_posts()) :
+					while ( $intro->have_posts()) :
+						$intro->the_post();
+				?>
+
 				<div class="row single-column intro-sort">
 					<div class="col-sm-12 text-center">
-						<h4>YELLOOW biedt ondersteuning bij selectie van medewerkers, coaching van jezelf en je bedrijf,  trouble-shooting en trouble-advisering. YELLOOW legt de focus op de analyse van drijfveren en talenten van jezelf en je medewerkers.</h4>
+						<?php echo get_post_meta(get_the_ID(), 'wpcf-intro', true); ?>
 					</div>
 				</div>
 
 				<div class="row double-columns">
 					<div class="col-sm-6 text-justify">
-						<p>Mensen met verschillende talenten, ieder met hun unieke “Black Box”, motiveren en goed laten samenwerken is de uitdaging voor een bedrijf. Weten dat ieder met een andere bril naar de wereld kijkt, is het uitgangspunt. Inzicht in je eigen kijk creëert kansen om medewerkers en teams beter te managen.</p>
-
-						<p>YELLOOW helpt zicht krijgen op de processen die in een bedrijf spelen.	</p>
-
-						<p>Uw en onze analyse zijn het uitgangspunt.De kleurentheorie en –test zijn voor YELLOOW een hulpmiddel om tot een evenwichtige analyse te komen.	</p>
-
+						<?php echo get_post_meta(get_the_ID(), 'wpcf-intro-left-column', true); ?>
 					</div>
 
 					<div class="col-sm-6">
 						<h4>Voor wie:</h4>
 
 						<ul class="list-unstyled list-right-arrow">
-							<li>Managers &amp; LEIDINGGEVENDEN </li>
-							<li>Teams</li>
-							<li>INDIVIDUELE PROFESSIONALS</li>
+							
+							<?php
+							$voorwie = new WP_Query(array(
+								'post_type'	=> 'voor-wie'
+							));
+
+							if ($voorwie->have_posts()) :
+								while($voorwie->have_posts()):
+									$voorwie->the_post();
+							?>
+
+							<li>
+								<a href="<?php echo get_post_type_archive_link('voor-wie')?>#<?php echo $post->post_name; ?>" target="_blank">
+									<?php the_title(); ?>
+								</a>
+							</li>
+
+							<?php
+								endwhile;
+								wp_reset_postdata();
+							endif;
+							?>
+
 						</ul>
+
 					</div>
 				</div>
+
+				<?php
+					endwhile;
+					wp_reset_postdata();
+				endif;
+				?>
+				
 			</div>
 		</div>
 

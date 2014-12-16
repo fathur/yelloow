@@ -5,6 +5,7 @@
 	<?php 
 	$over = new WP_Query(array(
 		'post_type'	=> get_post_type(),
+	
 		'tax_query'	=> array(
 			array(
 				'taxonomy'	=> 'over-yelloow-tax',
@@ -51,6 +52,8 @@
 		
 		$over = new WP_Query(array(
 			'post_type'	=> get_post_type(),
+			'orderby'	=> 'menu_order',
+			'order'		=> 'ASC',
 			'tax_query'	=> array(
 				array(
 					'taxonomy'	=> 'over-yelloow-tax',
