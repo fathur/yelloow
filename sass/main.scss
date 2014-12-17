@@ -49,38 +49,36 @@
  */
 .navbar-yelloow {
 
-  & > li:not(:last-child) {
+  & > li {
     & > a {
       padding: 15px 0px 0px 0px;
       margin: 0 15px;
+      color: $black;
 
       &:hover {
-        color: $yellow;
+        color: $yellow !important;
       }
     }
   }
 
-  & > li:last-child {
-    & > a {
-
-      &:hover {
-        color: $yellow;
-      }
-    }
-  }
-
-  & > .active:not(:last-child) {
+  & > .active {
     & > a {
         
         background-color: #FFFFFF !important; 
 
-        color: $yellow;
+        color: $yellow !important;
         border-bottom: 5px solid $yellow;
 
       &:hover {
         color: $yellow;
       }
     }
+  }
+
+  .separator {
+    font-size: 25px;
+    padding-top: 9px;
+    color: $black;
   }
 }
 
@@ -305,9 +303,9 @@ ul.list-right-arrow {
     padding: 15px 0 15px 40px;
 
     & > a {
-      text-decoration: none;
       color: $blue;
       display: block;
+      text-decoration: none;
     }
   }
 }
