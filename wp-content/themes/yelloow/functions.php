@@ -47,6 +47,21 @@ function redirect($url, $statusCode = 303) {
 	die();
 }
 
+/**
+ * Filtering search
+ * hiding contact from search
+ * @return 
+ */
+function search_filter($query)
+{
+	if ($query->is_search) {
+		$query->set('post__not_in',array(25));
+	}
+
+	return $query;
+}
+add_filter('pre_get_posts','search_filter');
+
 // require get_template_directory() . '/inc/admin-menu.php'; 
 require get_template_directory() . '/inc/navigation-menu.php'; 
  
