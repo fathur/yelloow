@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	
 	<title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
@@ -16,7 +16,7 @@
 	<?php wp_head(); ?>
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<!--[if lt IE 7]>
 	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -31,7 +31,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="<?php echo get_option('home'); ?>">
+		      <a class="navbar-brand" href="<?php echo home_url(); ?>">
 		      	<img src="<?php echo get_template_directory_uri(); ?>/img/logo-yelloow.png" class="img-responsive">
 		      </a>
 		    </div>
@@ -61,12 +61,6 @@
 
 				<div class="row menu">
 					<div class="col-sm-9 col-sm-offset-3">
-						<!-- <ul class="nav navbar-nav navbar-right navbar-yelloow">
-							<li class="active"><a href="voorwie.html">VOOR WIE</a></li>
-							<li><a href="approach.html">APPROACH</a></li>
-							<li><a href="over.html">OVER YELLOOW</a></li>
-							<li><a href="contact.html">CONTACT</a></li>
-						</ul> -->
 						<?php yelloow_display_menu(); ?>
 					</div>
 				</div>

@@ -23,7 +23,7 @@ $voorwie = new WP_Query(array(
 					$voorwie->the_post();
 			?>
 
-			<div class="col-xs-4 col-sm-4 text-center">
+			<div class="col-xs-4 col-sm-4 text-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<a href="#<?php echo $post->post_name; ?>">
 					
 					<?php the_post_thumbnail('full', array(
@@ -53,7 +53,7 @@ $voorwie = new WP_Query(array(
 				$voorwie->the_post();
 		?>
 
-		<div class="row" id="<?php echo $post->post_name; ?>">
+		<div class="row" id="<?php echo $post->post_name; ?>" <?php post_class(); ?>>
 			<div class="col-sm-12">
 				<div class="row single-column">
 					<div class="col-sm-12 title">

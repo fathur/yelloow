@@ -28,7 +28,7 @@
 
 	<div class="container">
 		<div class="row text-center text">
-			<div class="col-sm-12">
+			<div class="col-sm-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php the_content(); ?>
 			</div>
 		</div>
@@ -68,7 +68,7 @@
 				$over->the_post();
 		?>
 
-		<div class="row">
+		<div class="row" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="col-sm-12">
 
 				<div class="row single-column text-center">
@@ -110,7 +110,7 @@
 				$over->the_post();
 		?>
 
-		<div class="row reference">
+		<div class="row reference" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="col-sm-12">
 				<div class="row single-column">
 					<div class="col-sm-12 title">

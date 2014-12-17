@@ -1,3 +1,3 @@
 <?php
 
-redirect( get_option('home') );
+redirect( home_url() );

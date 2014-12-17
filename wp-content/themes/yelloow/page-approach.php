@@ -49,7 +49,7 @@
 						$graves->the_post();
 				?>
 
-				<div class="row single-column">
+				<div class="row single-column" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<div class="col-sm-12 title">
 						<h2><?php the_title(); ?></h2>
 					</div>
@@ -122,7 +122,7 @@
 				<div class="row double-columns">
 
 					<?php for ($i=0; $i < 2; $i++) : ?>
-					<div class="col-sm-6 text-center">
+					<div class="col-sm-6 text-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<?php echo $colors[$i]['image']; ?>
 						<h4><?php echo $colors[$i]['title']; ?></h4>
 						<?php echo $colors[$i]['content']; ?>
@@ -134,7 +134,7 @@
 				<div class="row triple-columns">
 
 					<?php for ($j=2; $j < 5; $j++) : ?>
-					<div class="col-sm-4 text-center">
+					<div class="col-sm-4 text-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<?php echo $colors[$j]['image']; ?>
 						<h4><?php echo $colors[$j]['title']; ?></h4>
 						<?php echo $colors[$j]['content']; ?>
@@ -146,7 +146,7 @@
 
 				<div class="row double-columns">
 					<?php for ($k=5; $k < 7; $k++) : ?>
-					<div class="col-sm-6 text-center">
+					<div class="col-sm-6 text-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<?php echo $colors[$k]['image']; ?>
 						<h4><?php echo $colors[$k]['title']; ?></h4>
 						<?php echo $colors[$k]['content']; ?>
