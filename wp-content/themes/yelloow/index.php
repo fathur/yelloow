@@ -9,10 +9,10 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="img/slider-1.png" alt="..." class="img-responsive center-block">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/slider-1.png" alt="..." class="img-responsive center-block">
 		</div>
 		<div class="item">
-			<img src="img/slider-2.png" alt="..." class="img-responsive center-block">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/slider-2.png" alt="..." class="img-responsive center-block">
 		</div>
 	</div>
 </div>
