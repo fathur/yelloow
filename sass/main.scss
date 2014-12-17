@@ -1,6 +1,14 @@
 @import "variable.scss";
 @import "bootstrap-override.scss";
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  padding-left: 18px;
+}
+
 // Setting blok container fluid, jumbotron, dll
 // agar berwarna kuning
 .yellow {
