@@ -24,13 +24,13 @@ $voorwie = new WP_Query(array(
 			?>
 
 			<div class="col-xs-4 col-sm-4 text-center" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<a href="#<?php echo $post->post_name; ?>">
+				<a href="#<?php echo $post->post_name; ?>" style="display: block; position: relative;">
 					
 					<?php the_post_thumbnail('full', array(
 						'class'	=> 'img-responsive center-block'
 					)); ?>
 
-					<h4><?php the_title(); ?></h4>
+					<h4 style="position: absolute; left: -20px; right: -20px;"><?php the_title(); ?></h4>
 				</a>
 			</div>
 
