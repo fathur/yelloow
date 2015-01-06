@@ -61,7 +61,7 @@
 							?>
 
 							<li>
-								<a href="<?php echo get_post_type_archive_link('voor-wie')?>#<?php echo $post->post_name; ?>" target="_blank">
+								<a href="<?php echo get_post_type_archive_link('voor-wie')?>#<?php echo $post->post_name; ?>">
 									<?php the_title(); ?>
 								</a>
 							</li>
