@@ -30,14 +30,14 @@ add_action('wp_enqueue_scripts','yelloow_load_scripts');
  * Open Sans
  * @return [type] [description]
  */
-function yelloow_fonts() {
+/*function yelloow_fonts() {
 	wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,300,700,800');
 	wp_register_style('open-sans-condensed', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700');
 
 	wp_enqueue_style('open-sans');
 	wp_enqueue_style('open-sans-condensed');
 }
-add_action('wp_print_styles','yelloow_fonts');
+add_action('wp_print_styles','yelloow_fonts');*/
 
 /**
  * Redirect helper
