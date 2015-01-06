@@ -419,6 +419,22 @@ ul.list-right-arrow {
     }
   }
 
+  @media (max-width: 767px) {
+    .double-columns {
+      .col-sm-6 {
+        &:nth-child(odd) {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+
+        &:nth-child(even) {
+          padding-right: 15px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+
   @media (min-width: 768px) {
     .double-columns,
     .triple-columns {
