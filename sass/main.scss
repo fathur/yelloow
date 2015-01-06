@@ -228,6 +228,12 @@ p {
  * ======================
  */
 .carousel-yelloow {
+
+  h2 {
+    font-size: 26px;
+    color: $dark-gray;
+  }
+
   & > .carousel-inner {
     & > .item {
       height: 500px;
@@ -387,6 +393,7 @@ ul.list-right-arrow {
     display: table;
     margin: 0 auto 50px auto;
     padding: 0 0 8px 0;
+    color: $dark-gray;
   }
 }
 
@@ -589,6 +596,10 @@ ul.list-right-arrow {
 
   .address {
     font-weight: 700;
+
+    p {
+      color: $dark-gray;
+    }
   }
 
   .phone {
@@ -623,6 +634,10 @@ ul.list-right-arrow {
   .copyright {
     font-weight: 700;
     font-size: 11px;
+
+    p {
+      color: $dark-gray;
+    }
   }
 }
 
