@@ -1,3 +1,8 @@
+@media (min-width: 992px) {
+  .container {
+    width: 800px;
+  }
+}
 
 .navbar {
   border: none;
@@ -124,6 +129,8 @@ fieldset[disabled] .btn-turquoise.active {
 
 .jumbotron {
   p {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
+    color: $dark-gray;
   }
 }

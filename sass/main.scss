@@ -9,6 +9,10 @@ ul {
   padding-left: 18px;
 }
 
+p {
+  color: $black;
+}
+
 // Setting blok container fluid, jumbotron, dll
 // agar berwarna kuning
 .yellow {
@@ -60,8 +64,9 @@ ul {
   & > li {
     & > a {
       padding: 15px 0px 0px 0px;
-      margin: 0 15px;
+      margin: 0 10px;
       color: $black;
+      font-size: 18px;
 
       &:hover {
         color: $yellow !important;
@@ -223,6 +228,12 @@ ul {
  * ======================
  */
 .carousel-yelloow {
+
+  h2 {
+    font-size: 26px;
+    color: $dark-gray;
+  }
+
   & > .carousel-inner {
     & > .item {
       height: 500px;
@@ -288,6 +299,7 @@ ul {
     line-height: 1.4;
     margin-top: 50px;
     margin-bottom: 30px;
+    font-weight: 600;
   }
 }
 
@@ -340,11 +352,11 @@ ul.list-right-arrow {
 
     @media (min-width: 992px) {
        & > .col-sm-4:first-child {
-        padding-left: 160px;
+        padding-left: 100px;
       }
 
       & > .col-sm-4:last-child {
-        padding-right: 160px;
+        padding-right: 100px;
       }
     }
 
@@ -381,6 +393,7 @@ ul.list-right-arrow {
     display: table;
     margin: 0 auto 50px auto;
     padding: 0 0 8px 0;
+    color: $dark-gray;
   }
 }
 
@@ -583,14 +596,23 @@ ul.list-right-arrow {
 
   .address {
     font-weight: 700;
+
+    p {
+      color: $dark-gray;
+    }
   }
 
   .phone {
+    span.separator {
+      color: $blue;
+      font-weight: 900;
+    }
+
     a {
       font-weight: 700;
       color: $blue;
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         &:first-child {
           margin-right: 20px;
         }
@@ -598,7 +620,7 @@ ul.list-right-arrow {
         &:last-child {
           margin-left: 20px;
         }
-      }
+      } */
     }
 
     @media screen and (max-width: 767px) {
@@ -612,6 +634,10 @@ ul.list-right-arrow {
   .copyright {
     font-weight: 700;
     font-size: 11px;
+
+    p {
+      color: $dark-gray;
+    }
   }
 }
 
