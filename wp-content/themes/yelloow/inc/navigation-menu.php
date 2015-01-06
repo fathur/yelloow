@@ -34,7 +34,7 @@ function yelloow_display_menu()
 		$html .= '<li class="'.$active.'"><a href="'.$menu->url.'">'.$menu->title.'</a></li>';
 
 		if ( count($menus) != $i ) {
-			$html .= '<li class="separator">&bullet;</li>';
+			$html .= '<li class="separator hidden-xs">&bullet;</li>';
 		}
 
 		$i++;

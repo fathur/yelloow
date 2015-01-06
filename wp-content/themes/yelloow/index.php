@@ -11,9 +11,6 @@
 		<div class="item active">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/slider-1.png" alt="..." class="img-responsive center-block">
 		</div>
-		<div class="item">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/slider-2.png" alt="..." class="img-responsive center-block">
-		</div>
 	</div>
 </div>
 

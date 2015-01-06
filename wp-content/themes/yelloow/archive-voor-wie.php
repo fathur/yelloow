@@ -58,9 +58,22 @@ $voorwie = new WP_Query(array(
 				<div class="row single-column">
 					<div class="col-sm-12 title">
 						
-						<?php the_post_thumbnail('full', array(
-							'class'	=> 'img-responsive center-block'
-						)); ?>
+						<?php 
+
+						$yimg = get_post_meta( get_the_ID(), 'wpcf-yellow-image-voor-wie', true);
+
+						if ($yimg != '' || $yimg != null) { ?>
+
+							<img src="<?php echo $yimg; ?>" class="img-responsive center-block">
+						<?php
+							
+						} else {
+							the_post_thumbnail('full', array(
+								'class'	=> 'img-responsive center-block'
+							)); 
+						}
+
+						?>
 
 						<h2><?php the_title(); ?></h2>
 					</div>
