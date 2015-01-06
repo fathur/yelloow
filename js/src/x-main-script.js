@@ -29,16 +29,17 @@ $(function() {
   // bind to click event
   $("a").click(function( event ) {
  
-    // only do this if it's an anchor link
-    if ( $(this).attr("href").match("#") ) {
+    var link = $(this).attr("href");
  
-      // cancel default event propagation
+    if ( link.match("#") && link.match("http") ) {
+ 
+      // do normal action
+ 
+    } else if ( link.match("#") ) {
+
       event.preventDefault();
- 
-      // scroll to the location
-      var href = $(this).attr('href').replace('#', '')
+      var href = link.replace('#', '')
       scrollToAnchor( href );
- 
     }
  
   });
