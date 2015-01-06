@@ -51,6 +51,7 @@ p {
 
 .row.menu {
   a {
+    color: $dark-gray;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -540,7 +541,15 @@ ul.list-right-arrow {
   }
 }
 
-.address {
+.contact-coordinate {
+
+  font-size: 18px;
+
+  p {
+
+    color: $dark-gray;
+  }
+
   a {
     display: block;
     font-weight: 700;
