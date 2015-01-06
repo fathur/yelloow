@@ -16,18 +16,20 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12 text-center address" id="">
-					<p>YELLOOW &#9642; Marktstraat 67 &#9642; 1745 Opwijk &#9642; BE 0556.981.918</p>
+					<p>YELLOOW &bullet;  Marktstraat 67 &bullet; 1745 Opwijk &bullet; BE 0556.981.918</p>
 				</div>
 				<div class="col-sm-12 text-center phone" id="">
 					<p>
-						<a href="tel:+32 486-142-752">&#43; 32 486 142 752 (Linda Leemans)</a>
-						<a href="tel:+32 486-142-752">&#43; 32 477 558 758 (Greet Leemans)</a>
+						<a href="tel:+32 486-142-752">Linda Leemans: &#43; 32 486 142 752</a> 
+						<span class="separator">&bullet;</span>
+						<a href="tel:+32 486-142-752">Greet Leemans: &#43; 32 477 558 758</a>
+						<span class="separator">&bullet;</span>
 						<a href="mailto:info@yelloow.be">info&#64;yelloow&#46;be</a>
 					</p>
 				</div>	
 				<div class="col-sm-12 text-center copyright" id="">
 					<p>&#169; YELLOOW CONSULT 2014 - ALLE RECHTEN VOORBEHOUDEN<br/>
-					Sitemap &#9642; site by nilsblanckaert.be</p>
+					Sitemap &bullet; site by nilsblanckaert.be</p>
 				</div>
 			</div>
 		</div>
