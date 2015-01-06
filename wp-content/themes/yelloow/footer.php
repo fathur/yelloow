@@ -21,9 +21,9 @@
 				<div class="col-sm-12 text-center phone" id="">
 					<p>
 						<a href="tel:+32 486-142-752">Linda Leemans: &#43; 32 486 142 752</a> 
-						<span class="separator">&bullet;</span>
+						<span class="separator hidden-xs">&bullet;</span>
 						<a href="tel:+32 486-142-752">Greet Leemans: &#43; 32 477 558 758</a>
-						<span class="separator">&bullet;</span>
+						<span class="separator hidden-xs">&bullet;</span>
 						<a href="mailto:info@yelloow.be">info&#64;yelloow&#46;be</a>
 					</p>
 				</div>	
