@@ -592,11 +592,16 @@ ul.list-right-arrow {
   }
 
   .phone {
+    span.separator {
+      color: $blue;
+      font-weight: 900;
+    }
+
     a {
       font-weight: 700;
       color: $blue;
 
-      @media (min-width: 768px) {
+      /* @media (min-width: 768px) {
         &:first-child {
           margin-right: 20px;
         }
@@ -604,7 +609,7 @@ ul.list-right-arrow {
         &:last-child {
           margin-left: 20px;
         }
-      }
+      } */
     }
 
     @media screen and (max-width: 767px) {
