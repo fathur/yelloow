@@ -7,7 +7,7 @@
 	</div>
 
 	<div class="container">
-		<div class="row text-center text address">
+		<div class="row text-center text contact-coordinate">
 			<div class="col-sm-12">
 				<p>
 					<b>YELLOOW</b><br/>
@@ -15,8 +15,8 @@
 					<b>1745 Opwijk</b>
 				</p>
 				<p>
-					<a href="tel:+32 486 142 752">&#43;32 486 142 752 &#9642; Linda Leemans</a>
-					<a href="tel:+32 477 558 758">&#43;32 477 558 758 &#9642; Greet Leemans</a>
+					<a href="tel:+32 486 142 752">&#43;32 486 142 752 &bullet; Linda Leemans</a>
+					<a href="tel:+32 477 558 758">&#43;32 477 558 758 &bullet; Greet Leemans</a>
 				</p>
 
 				<p><a href="mailto:info@yellow.be">info&#64;yellow&#46;be</a></p>
