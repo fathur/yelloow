@@ -152,6 +152,8 @@
 		if ($over->have_posts()) :
 			while ( $over->have_posts() ) :
 				$over->the_post();
+
+				
 		?>
 
 		<div class="row reference" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -165,12 +167,16 @@
 				<div class="row triple-columns">
 
 					<?php 
-					$logos = get_post_meta( get_the_ID(), 'wpcf-logo');
-					foreach ($logos as $logo) :
+					$childs = types_child_posts('onze-referenties');
+
+					foreach ($childs as $child) :
+						$field = $child->fields;
 					?>
 
 					<div class="col-xs-6 col-sm-4">
-						<img src="<?php echo $logo; ?>" class="img-responsive center-block">
+						<a href="<?php echo $field['reference_link']; ?>" target="__blank">
+							<img src="<?php echo $field['logo']; ?>" class="img-responsive center-block">
+						</a>
 					</div>
 					
 					<?php
