@@ -47,7 +47,7 @@
 		
 		<?php 
 		/**
-		 * 
+		 * Double Columns sections
 		 */
 		
 		$over = new WP_Query(array(
@@ -58,7 +58,7 @@
 				array(
 					'taxonomy'	=> 'over-yelloow-tax',
 					'field'		=> 'slug',
-					'terms'		=> 'content'
+					'terms'		=> 'content-double-columns'
 				)
 			)
 		));
@@ -90,9 +90,53 @@
 			wp_reset_postdata();
 		endif;
 
+
+		/**
+		 * Single Column Section
+		 * 
+		 **/
+		$over = new WP_Query(array(
+			'post_type'	=> get_post_type(),
+			'orderby'	=> 'menu_order',
+			'order'		=> 'ASC',
+			'tax_query'	=> array(
+				array(
+					'taxonomy'	=> 'over-yelloow-tax',
+					'field'		=> 'slug',
+					'terms'		=> 'content-single-column'
+				)
+			)
+		));
+
+		if ($over->have_posts()) :
+			while ( $over->have_posts() ) :
+				$over->the_post();
+		?>
+
+		<div class="row" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div class="col-sm-12">
+
+				<div class="row single-column text-center">
+					<div class="col-sm-12 title">
+						<h2 class="title"><?php the_title(); ?></h2>
+					</div>
+				</div>
+
+				<div class="row single-column">
+					<div class="col-sm-12 text-justify">
+						<?php the_content(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<?php
+			endwhile;
+			wp_reset_postdata();
+		endif;
 		
 		/**
-		 * 
+		 * Reference image columns
 		 */
 		$over = new WP_Query(array(
 			'post_type'	=> get_post_type(),
