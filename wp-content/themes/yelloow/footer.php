@@ -29,7 +29,7 @@
 				</div>	
 				<div class="col-sm-12 text-center copyright" id="">
 					<p>&#169; YELLOOW CONSULT 2014 - ALLE RECHTEN VOORBEHOUDEN<br/>
-					Sitemap &bullet; site by nilsblanckaert.be</p>
+					site by nilsblanckaert.be</p>
 				</div>
 			</div>
 		</div>

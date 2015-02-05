@@ -2,8 +2,8 @@
 
 <div id="carousel-yelloow" class="carousel slide yellow carousel-yelloow" data-ride="carousel">
 	<div class="container text-center text">
-		<h2>INVESTEREN IN MEER SUCCES VOOR JEZELF EN JE BEDRIJF ?</h2>
-		<h2>Ontdek de Black Box van jezelf en van anderen</h2>
+		<h2>INVESTEREN IN MEER SUCCES VOOR JEZELF, JE BEDRIJF OF ORGANISATIE?</h2>
+		<h2>ontdek de <a href="#blackbox">Black Box</a> van jezelf en van anderen</h2>
 	</div>
 
 	<!-- Wrapper for slides -->
@@ -45,7 +45,7 @@
 						<?php echo get_post_meta(get_the_ID(), 'wpcf-intro-left-column', true); ?>
 					</div>
 
-					<div class="col-sm-6">
+					<div class="col-sm-6 home-voorwie">
 						<h4>Voor wie:</h4>
 
 						<ul class="list-unstyled list-right-arrow">

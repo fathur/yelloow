@@ -13,6 +13,17 @@ p {
   color: $black;
 }
 
+a {
+  color: $blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
 // Setting blok container fluid, jumbotron, dll
 // agar berwarna kuning
 .yellow {
@@ -106,7 +117,7 @@ p {
   padding: 40px 0 100px 0;
 
   & > .row:not(:first-child) {
-    margin-top: 90px;
+    margin-top: 70px;
   }
 
   // Konten yang memiliki satu kolom saja
@@ -301,6 +312,7 @@ p {
     margin-top: 50px;
     margin-bottom: 30px;
     font-weight: 600;
+    color: $dark-gray;
   }
 }
 
@@ -308,6 +320,12 @@ p {
  * Arrow bullet for
  * list voor wie
  */
+.home-voorwie {
+  h4 {
+    margin-top: 0px;
+  }
+}
+
 ul.list-right-arrow {
   li:not(:last-child) {
     border-bottom: 1px solid $yellow;

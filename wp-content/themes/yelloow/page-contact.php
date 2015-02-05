@@ -19,7 +19,7 @@
 					<a href="tel:+32 477 558 758">&#43;32 477 558 758 &bullet; Greet Leemans</a>
 				</p>
 
-				<p><a href="mailto:info@yellow.be">info&#64;yellow&#46;be</a></p>
+				<p><a href="mailto:info@yellow.be">info&#64;yelloow&#46;be</a></p>
 			</div>
 		</div>
 	</div>
