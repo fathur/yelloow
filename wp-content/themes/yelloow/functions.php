@@ -65,6 +65,22 @@ function search_filter($query)
 }
 add_filter('pre_get_posts','search_filter');
 
+/**
+ * Change login logo
+ */
+function yelloow_login_logo() { ?>
+<style type="text/css">
+	body.login div#login h1 a {
+		background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/logo-yelloow.png');
+		padding-bottom: 30px;
+		background-size: 60%;
+		margin: 0 auto;
+		width: 100%;
+	}
+</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'yelloow_login_logo' );
+
 // require get_template_directory() . '/inc/admin-menu.php'; 
 require get_template_directory() . '/inc/navigation-menu.php'; 
  
