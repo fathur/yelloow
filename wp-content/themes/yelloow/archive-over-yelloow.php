@@ -167,7 +167,10 @@
 				<div class="row triple-columns">
 
 					<?php 
-					$childs = types_child_posts('onze-referenties');
+					$childs = types_child_posts('onze-referenties', array(
+						'orderby'	=> 'menu_order'	,
+						'order'		=> 'ASC'
+					));
 
 					foreach ($childs as $child) :
 						$field = $child->fields;
