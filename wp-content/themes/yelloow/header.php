@@ -11,6 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="Yellow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Fostrom, Fathur Rohman (&#102;&#097;&#116;&#104;&#117;&#114;&#095;&#114;&#111;&#104;&#109;&#097;&#110;&#049;&#055;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#099;&#111;&#046;&#105;&#100;)">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,300,700,800' rel='stylesheet' type='text/css'>
