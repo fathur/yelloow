@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="jumbotron yellow">
+<div class="jumbotron yellow" id="trouble-shooting">
 	<div class="container text-center troubleshoot">
 		<?php 
 
@@ -32,7 +32,7 @@
 
 <div class="container-fluid white">
 	<div class="container content">
-		<div class="row text-center graves">
+		<div class="row text-center graves" id="graves">
 			<div class="col-sm-12">
 
 				<?php
@@ -75,7 +75,7 @@
 			</div>
 		</div>
 
-		<div class="row drijfveren">
+		<div class="row drijfveren" id="drijfveren">
 
 			<?php
 			/**

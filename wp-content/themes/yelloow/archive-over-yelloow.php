@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="jumbotron yellow img-full-width">
+<div class="jumbotron yellow img-full-width" id="jumbotron-<?php echo get_post_type(); ?>">
 
 	<?php 
 	$over = new WP_Query(array(

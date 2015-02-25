@@ -21,7 +21,7 @@
 	</a>
 
 	<div class="container content">
-		<div class="row intro">
+		<div class="row intro" id="intro">
 			<div class="col-sm-12">
 
 				<?php 
